@@ -26,5 +26,26 @@ $(document).ready(function() {
     
 });
 
+function move(idName, idPercent, percentage, timing) {
+    var elem = document.getElementById(idName);
+    var percent = document.getElementById(idPercent);
+    var number = percentage;
+    var width = 1;
+    var id = setInterval(frame, timing);
+    function frame() {
+        if(width >= number) {
+           clearInterval(id);
+        }
+        else {
+            width++;
+            elem.style.width = width + '%';
+            percent.innerHTML = width + '%';
+        }
+    }
+}
 
+move("java", "javaPercent", 78, 20);
+move("OOP", "OOPPercent", 85, 17);
+move("JS", "jsPercent", 64, 24);
+move("frontend", "frontendPercent", 72, 17);
 
