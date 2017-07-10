@@ -276,7 +276,7 @@ body {
 #second-page {
     display:inline-block;
     width:100vw;
-    background-color: #EFEFEF;
+    background-color: #EEE;
     float:left;
     clear:none;
     
@@ -416,7 +416,7 @@ td {
     display: inline;
 }
 
-#skills {
+#skills, #education {
     text-align:left;
 }
 
