@@ -26,6 +26,12 @@ $(document).ready(function() {
     
 });
 
+function addEmail() {
+    document.getElementById('contact-form').action = "https://formspree.io/james.angeles@stonybrook.edu";
+}
+
+
+
 function move(idName, idPercent, percentage, timing) {
     var elem = document.getElementById(idName);
     var percent = document.getElementById(idPercent);
@@ -43,7 +49,7 @@ function move(idName, idPercent, percentage, timing) {
         }
     }
 }
-
+addEmail();
 move("java", "javaPercent", 78, 20);
 move("OOP", "OOPPercent", 85, 17);
 move("JS", "jsPercent", 64, 24);
