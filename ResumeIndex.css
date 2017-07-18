@@ -576,6 +576,7 @@ td {
 .break-up {
     margin-top: 20px;
     margin-bottom:25px;
+    width:98%;
     border: 0;
     border-top: 1px solid #CCC;
 }
@@ -596,14 +597,9 @@ td {
 
 @media only screen and (min-width: 993px) {
     .card {
-        margin-left: 20px;
+        margin-left: 30px;
         margin-right:30px;
-    }
-}
-
-@media only screen and (max-device-width: 1300px) and (min-device-width: 900px) {
-    .card {
-        width: 28% !important;
+     
     }
 }
 
