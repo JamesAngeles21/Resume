@@ -24,6 +24,37 @@ $(document).ready(function() {
     $menuWrap.toggleClass('menu-show');    
     });
     
+    $(function() {
+    var $section = $("#fourth-page");
+    
+    function loadDaBars() {
+        $("#java").animate({
+                width: "78%"
+            }, 2400);
+        $("#OOP").animate({
+                width: "85%"
+            }, 2400);
+        $("#JS").animate({
+                width: "64%"
+            }, 2400);
+        $("#frontend").animate({
+                width: "72%"
+            }, 2400);
+    
+    }
+        
+    $(document).bind('scroll', function(ev) {
+        var scrollOffset = $(document).scrollTop();
+        var containerOffset = $section.offset().top - window.innerHeight;
+        if (scrollOffset > containerOffset) {
+            loadDaBars();
+            // unbind event not to load scrolsl again
+            $(document).unbind('scroll');
+        }
+    });
+    
+});
+
 });
 
 function addEmail() {
@@ -31,27 +62,9 @@ function addEmail() {
 }
 
 
-
-function move(idName, idPercent, percentage, timing) {
-    var elem = document.getElementById(idName);
-    var percent = document.getElementById(idPercent);
-    var number = percentage;
-    var width = 1;
-    var id = setInterval(frame, timing);
-    function frame() {
-        if(width >= number) {
-           clearInterval(id);
-        }
-        else {
-            width++;
-            elem.style.width = width + '%';
-            percent.innerHTML = width + '%';
-        }
-    }
-}
 addEmail();
-move("java", "javaPercent", 78, 20);
-move("OOP", "OOPPercent", 85, 17);
-move("JS", "jsPercent", 64, 24);
-move("frontend", "frontendPercent", 72, 17);
+
+
+
+
 

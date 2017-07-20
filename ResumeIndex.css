@@ -19,6 +19,9 @@ li {
     padding-top: 10px;
 }
 
+html, body {
+    height:100%;
+}
 
 body {
     z-index: 0;
@@ -36,10 +39,12 @@ body {
     display: block;
     background: rgba(255,255,255,0.8);
     width:100%;
-    height: 10%;
     
 }
 
+.wrap-logo {
+    width:10%;
+}
 
 .headInit {
     font-size:30px;
@@ -62,6 +67,12 @@ body {
     clear:none;
 }
 
+@media screen and (max-width: 480px) {
+    #intro {
+        background-image:url('Images/mountain%20pic.jpg');
+    }
+    
+}
 
 .container {
     display: block;
@@ -70,11 +81,6 @@ body {
 }
 
 
-@media screen and (max-width:480px) .name-intro {
-    
-    min-width: 280px;
-    padding:25px;
-}
 
 
 
@@ -82,7 +88,7 @@ body {
     left: 50%;
     top:50%;
     position:absolute;
-    min-width: 360px;
+    width: 360px;
     padding: 65px;
     outline: 4px double #FFF;
     outline-offset: 8px;
@@ -92,6 +98,48 @@ body {
     z-index:1;
 
 }
+
+.contact-intro {
+    left: 50%;
+    top:50%;
+    position:absolute;
+    width: 560px;
+    padding: 65px;
+    outline: 4px double #FFF;
+    outline-offset: 8px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    transform: translateX(-50%) translateY(-50%);
+    z-index:1;
+}
+
+@media screen and (max-width:480px) {
+    .contact-intro {
+        width:340px;
+    }
+    
+}
+
+.contact-text {
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (min-width:480px) {
+    .contact-text {
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .name-intro {
+    
+    width: 325px !important;
+    padding:50px;
+    }
+}
+
 
 .wrap-name-intro {
     width:100%;
@@ -500,8 +548,36 @@ td {
 
 .percent {
     font-family: 'Roboto Slab', serif !important;
-    color: #FFF;
+    position:relative;
+    line-height: 18px;
+    width: 40px;
+    height: 18px;
+    left:97.8%;
+    top: -30px;
+    color: #fff;
+    text-align: center;
+    background-color:#818181;
 }
+
+.percent-count {
+    position:relative;
+    display:block;
+    font-size:12px;
+    
+}
+
+.percent-count:after {
+    border-top: 4px solid #818181;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 18px;
+    content: "";
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+
 
 .titles {
     text-align: left;
@@ -511,10 +587,14 @@ td {
 }
 
 #java, #OOP, #JS, #frontend {
-    width: 1vh;
+    width: 0%;
+    position:relative;
     height: 15px;
     background-color: #818181;
 }
+
+
+
 
 .skillbar {
     padding-top: 15px;
@@ -721,7 +801,7 @@ input {
 }
 
 .wrap-message {
-    transform:translateY(40vh);
+    transform:translateY(40 vh);
 }
 
 .wrap-contact {
@@ -781,4 +861,13 @@ input {
     .introduction-text {
        width:60%;
     }
+}
+
+
+
+.signature {
+    display:block;
+    margin:0 auto;
+    width:300px;
+    margin-bottom:-90px;
 }

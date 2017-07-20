@@ -5,7 +5,7 @@
     <meta charset = "utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "description" content = "The Resume of James Angeles">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title> James Angeles</title>
     <link rel = "stylesheet" href = "ResumeIndex.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <link rel = "stylesheet" href = "animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <script src="https://use.fontawesome.com/05df80e09d.js"></script>    
-        
+    <link rel = "icon" href = "Images/favicon%20(1).ico">
     
     
     </head>
@@ -25,33 +25,34 @@
         
         <div class = "header">
                 <div class = "col-md-6 col-xs-6">
-                    <h1 class = "headInit"> J.A. </h1>
+                    <div class = "wrap-logo">
+                    <a href = "jamesangeles.me"><h1 class = "headInit"> J.A. </h1> </a>
+                    </div>
                 </div>
                 
 
             
         </div> 
         
-        <div id = "intro">
-            
-            <div class = "wrap-name-intro">
-                <div class = "name-intro">
-                    <h1 class = "fade-in"> Hello! </h1>
-                    <h1 class = "fade-in-name"> I'm James. </h1>
-                </div>
-                
-                <div class = "wrap-start-button">
-                        <a href = "#second-page" id = "scroll"><button type = "button" id = "down-button">
-                            <span  id = "top" class = "glyphicon glyphicon-menu-down" aria-hidden = "true"></span>
+            <div id = "intro">
+                <div class = "wrap-name-intro">
+                    <div class = "name-intro">
+                        <h1 class = "fade-in"> Hello! </h1>
+                        <h1 class = "fade-in-name"> I'm James. </h1>
+                    </div>
 
-                            </button>
-                    </a>
-                    
+                    <div class = "wrap-start-button">
+                            <a href = "#second-page" id = "scroll"><button type = "button" id = "down-button">
+                                <span  id = "top" class = "glyphicon glyphicon-menu-down" aria-hidden = "true"></span>
+
+                                </button>
+                        </a>
+
+                    </div>
+
                 </div>
-            
+
             </div>
-            
-        </div>
         
         <section id = "second-page">
             <div class = "container-fluid">
@@ -69,7 +70,8 @@
                         <p id = "custom-para"> Hi! I am a passionate web programmer who desires to change the world through ground-breaking technologies. I pursue this dream by constantly challenging my skills as a developer whether it be through my classes at the University of Stony Brook or my numerous projects. I am most successful when using languages such as Java, Python, and Javascript. </p>
 
                         <h4><Strong>J. Angeles</Strong></h4>
-
+                                <img class = "signature" src = "Images/IMG_6191.JPG">
+                        
                     </div>
 
                     
@@ -139,7 +141,11 @@
                             <div class = "skillbar">
                                 <div class = "titlebar"> <p class = "titles"> Java</p></div>
                                 <div class = "progress-barr">
-                                    <div id = "java"> <h6 class = "percent" id = "javaPercent"> </h6></div>
+                                    <div id = "java">
+                                        <div class = "percent">
+                                            <span class = "percent-count"> 78%</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +154,11 @@
                             <div class = "skillbar">
                                 <div class = "titlebar"> <p class = "titles"> Object-Oriented Programming</p></div>
                                 <div class = "progress-barr">
-                                    <div id = "OOP"> <h6 class = "percent" id = "OOPPercent"> </h6></div>
+                                    <div id = "OOP"> 
+                                        <div class = "percent">
+                                            <span class = "percent-count"> 85%</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +167,11 @@
                             <div class = "skillbar">
                                 <div class = "titlebar"> <p class = "titles"> Javascript</p></div>
                                 <div class = "progress-barr">
-                                    <div id  ="JS"> <h6 class = "percent" id = "jsPercent"> </h6></div>
+                                    <div id  ="JS">
+                                        <div class = "percent">
+                                            <span class = "percent-count"> 64%</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +180,11 @@
                             <div class = "skillbar">
                                 <div class = "titlebar"> <p class = "titles"> Frontend Web Design</p></div>
                                 <div class = "progress-barr">
-                                    <div id  ="frontend"> <h6 class = "percent" id = "frontendPercent"> </h6></div>
+                                    <div id  ="frontend"> 
+                                        <div class = "percent">
+                                            <span class = "percent-count"> 72% </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
