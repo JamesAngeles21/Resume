@@ -35,10 +35,10 @@ $(document).ready(function() {
                 width: "85%"
             }, 2400);
         $("#JS").animate({
-                width: "64%"
+                width: "75%"
             }, 2400);
         $("#frontend").animate({
-                width: "72%"
+                width: "62%"
             }, 2400);
     
     }
