@@ -871,7 +871,12 @@ input {
     }
 }
 
-
+.me-pic {
+    display:block;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 90px; 
+}
 
 .signature {
     display:block;
