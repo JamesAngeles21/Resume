@@ -384,7 +384,7 @@ body {
     }
 }
 
-#third-page {
+#communication-projects {
     display:inline-block;
     width: 100%;
     float:left;
@@ -392,13 +392,19 @@ body {
     background-color:#FFF;
 }
 
-#fourth-page {
-    width: 100%;
+#third-page, #fifth-page {
     display:inline-block;
+    width: 100%;
+    float:left;
+    clear none;
     background-color:#EEE;
 }
 
-
+#fourth-page {
+    width: 100%;
+    display:inline-block;
+    background-color:#FFF;
+}
 
 
 a {
@@ -520,7 +526,6 @@ td {
 }
 
 .surrounding {
-    background-color: #F2F2F2;
     margin-top: 25px;
     border: 1.25px solid rgba(129, 129, 129, 0.01);
     display: inline-block;
@@ -697,7 +702,7 @@ td {
 }
 
 #sixth-page {
-    background-color:#EEE;
+    background-color:#FFF;
     padding-bottom: 100px;
 }
 
